@@ -1,0 +1,8 @@
+* {box-sizing: border-box;}
+body {display: flex;
+justify-content: center;
+background-image: url(https://cdn.shoplightspeed.com/shops/619633/files/14485692/dice-within-dice.jpg);
+background-repeat: no-repeat;
+background-size: auto;
+background-color: lightblue;
+}
