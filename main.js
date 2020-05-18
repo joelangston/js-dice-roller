@@ -12,15 +12,17 @@ var sound = new Audio();
 sound.src ='https://www.myinstants.com/media/sounds/shake-and-roll-dice-soundbible.mp3'
 
 
+    
+
 roll.addEventListener('click', function(){
 
 
     while (diceIndex < dice.value) {
-    let randomRoll = Math.floor(Math.random() * 6) + 1;
+    let randomRoll = Math.floor(Math.random() * 6) + 1
     totalRolls += randomRoll
 
     console.log (randomRoll)
-    diceIndex++;
+    diceIndex += 1
     dieRolls.push(randomRoll)
 }
 total.innerText = 'Total:' +  totalRolls
@@ -40,14 +42,16 @@ showAll.addEventListener ('click', function(){
 })
 
 reset.addEventListener ('click', function(){
-dieRolls = []
-dice.value = ''
-total.innerHTML = ''
-totalRolls = 0
-list.innerHTML = ''
-resetSound.play()
+    dieRolls = []
+    dice.value = ''
+    total.innerHTML = ''
+    totalRolls = 0
+    list.innerHTML = ''
+    diceIndex = 0
+    
+    } )
+    
 
-} )
 
 
 
